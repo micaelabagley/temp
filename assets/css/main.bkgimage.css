@@ -99,7 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f4f4f4; 
+        background-image: url("../../images/JUDF.jpg");
+		/*background: #f4f4f4; */
         /*background: #003366; */
 	}
 
@@ -204,7 +205,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3c3b3b;
+		/*color: #3c3b3b;*/
+        color: #f2a004;
 		font-family: "Raleway", Helvetica, sans-serif;
 		font-weight: 800;
 		letter-spacing: 0.25em;
@@ -1872,6 +1874,8 @@ input, select, textarea {
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(160, 160, 160, 0.3);
 		color: #3c3b3b !important;
+		/*box-shadow: inset 0 0 0 1px rgba(242, 160, 4, 0.3);
+		color: #f2a004 !important; */
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Raleway", Helvetica, sans-serif;
@@ -3472,7 +3476,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer .icons {
-		color: #aaaaaa;
+		/*color: #aaaaaa; */
+        color: #f2a004;
 	}
 
 	#footer .copyright {
