@@ -10,6 +10,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="single is-preload">
 
@@ -97,38 +98,118 @@
                       <h2><a href="#">CEERS Project Overview</a></h2>
                     </div>
                   </header>
-
+                
+                  <!-- Modal strategy map -->
+                 <!--
+                    <img class="image featured" id="modalImg" src="images/strategy2.png" alt="" title="CEERS Strategy Map">
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" src="images/strategy.png" id="modalImg">
+                    </div>  -->
+                
                   <article class="post">
                     <section id=goals>
                       <h3>CEERS Project Goals</h3>
-                        <p>The main goals of CEERS:
-                          <ol>
-                            <li> Constrain the abundance and physical nature of 
-                                galaxies at z~9-13 </li>
-                            <li> Constrain the physical conditions of
+                        <p> CEERS will demonstrate, test, and validate efficient extragalactic surveys with coordinated, overlapping parallel observations with the JWST instrument suite. The observations, tests, and data products will pave the way for Cycle 2 observations. </p> <!--, including validating JWST parallel observing modes, dither and exposure-time strategies, and spectroscopic observing modes including slit-loss corrections.</p> -->
+                        <p>CEERS will also address key <i>JWST</i> science 
+                           goals, including:</p>
+                          <ul style="margin-top:-2em;">
+                            <li> constraining the abundance and physical 
+                                nature of galaxies at z~9-13; </li>
+                            <li> constraining the physical conditions of
                                 star-formation and black hole growth via line 
-                                diagnostics of galaxies at z&gt3 </li>
-                            <li>Quantify the first bulge and disk structures at 
-                                z&gt3 </li>
-                            <li> Characterize galaxy mid-IR emission to study 
-                              dust-obscured star-formation and supermassive  
+                                diagnostics of galaxies at z&gt3; </li>
+                            <li>quantifying the first bulge and disk 
+                                structures at z&gt3; and </li>
+                            <li> characterizing galaxy mid-IR emission to study 
+                                dust-obscured star-formation and supermassive  
                                 black hole growth at z~1-3 </li>
-                          </ol>
-                        </p>
+                          </ul>
+                        <p> CEERS will therefore enable immediate community science exploring both extragalactic <i>JWST</i> science drivers: </p>
+                          <ul style="list-style-type:none;margin-top:-2em;">
+                            <li><a href="goals.html#first-light">First Light and Reionization</a></li>
+                            <li><a href="goals.html#galassembly">The Assembly of Galaxies</a></li>
+                          </ul>
                     </section>
                   </article>
 
                   <article class="post">
                     <section id=obs>
                       <h3>Observing Modes</h3>
-                      
+
+                  <!-- Modal observations plan -->
+                    <img class="image left" id="modalImg" src="images/obs.png" alt="" title="Planned EGS Observations">
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" src="images/obs.png" id="modalImg">
+                    </div>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Cras vehicula tellus eu ligula viverra, ac fringilla turpis suscipit. Quisque vestibulum rhoncus ligula.</p>
                     </section>
                   </article>
 
                   <article class="post">
                     <section id=products>
                       <h3>Community Products</h3>
-                      
+                      <p>The CEERS team will provide calibrated images and derived data products to the community in three planned releases. The planned data releases will include:
+                        <ul>
+                          <li>Mock raw images and spectra for JWST sources</li>
+                          <li><p>
+                          <li>Reduced 2D and 1D spectra
+                          <li>Image mosaics ...
+                          <li> spectroscopic catalogs: line fluxes, spec-z
+                          <li>PSF-Matched photometry catalogs:
+                          <li>release sample of z&gt9 candidates
+                          <li>F200W morphology catalogs 
+                          <li>Photometric and spectroscopic catalogs
+                        <h4>Pre-Cycle 1:</h4>
+                          <p>Using existing CANDELS catalogs and supplemented with simulations, we
+will generate mock raw images and spectra for JWST sources. Co-Is leading data reduction
+(and their groups) will use these products to test the pipeline, optimize where possible,
+and develop workflows for measuring physical quantities. We will produce new HST EGS
+mosaics and corresponding photometric catalogs, applying significant improvements beyond
+our earlier CANDELS products, including updated distortion, persistence, and astrometry
+corrections. The latter is critical for NIRSpec as the CANDELS HST mosaics have median
+residual distortions as large as 0.1 00 (50% of a MSA shutter width) compared to Gaia. All pre-
+Cycle 1 science-enabling products, including simulated data and catalogs, modified versions
+of STScI pipelines, and updated HST images and catalogs will be released to the community
+by the nominal start of Cycle 1 in April 2019.</p>
+                        <h4>Level 1:</h4>
+                          <p>We will release best-e↵ort (v0.5) initial reduced NIRCam and MIRI
+imaging (single drizzled mosaic per filter, aligned to updated HST WCS), and reduced 2D
+and 1D NIRSpec and NIRCam grism spectra, using the most up-to-date calibration products.
+The NIRSpec and NIRCam grism spectroscopy will be split into individual 2D and 1D filesper object. Our reduction plan extends beyond the standard STScI pipelines, including
+our own data quality inspection and corrections for persistence, crosstalk, ghosts, and other
+artifacts, re-running pipeline steps as needed. We will derive custom background estimation
+and mas-level astrometric alignment between NIRCam, MIRI, NIRSpec, and pre-existing
+data. All data products will be submitted to MAST and hosted on the CEERS website.</p>
+                        <h4>Level 2</h4>
+                          <p>We will re-reduce and release (v1) all CEERS data using available
+pipeline improvements (e.g., updated calibrations, corrections, etc.). We will create and re-
+lease 0.5–5 μm photometry catalogs, matching the point-spread function across the HST and
+NIRCam imaging, and deriving photometry in all bands using NIRCam F356W for detection.
+We will separately release a PSF-matched MIRI photometric catalog, with F560W+F770W
+and F1500+F1800+F2100 as the detection images. Our spectroscopic catalog will consist
+of emission line fluxes and spectroscopic redshifts. This initial spectroscopic catalog will
+be improved in Level 3 with continually refined slit-loss corrections, and background and
+contamination removal. We will release our initial catalog of z =9–13 candidate galaxies,
+and submit a corresponding publication in time for community use in Cycle 2 proposals.</p>
+                        <h4>Level 3</h4>
+                          <p>The final CEERS release will include: 1) v2 data updated with
+the latest STScI calibrations and algorithms. 2) v2 spectroscopic catalog (and correspond-
+ing publication) with application of our empirical slit-loss analysis, and several tabulated
+emission-line diagnostics (e.g., R23, O32, H↵/H ), and redshifts. We will write a publica-
+tion detailing our NIRSpec slit loss investigation, and will release all relevant data, including
+a database of slit loss corrections as a function of wavelength, source size, and distance of
+object from slit center, and a comparison of this to the pipeline correction values. 3) v2
+imaging catalog including all HST, NIRCam and MIRI photometry, and complementary
+ground-based imaging. We will use the CANDELS-team devised TPHOT software (Merlin
+et al. 2016) to obtain accurate deblended photometry for every NIRCam-detected object in
+the MIRI images. This catalog will include photometric redshifts (using EAZY; Brammer et
+al 2008) and stellar masses and SFRs using custom SED-fitting codes (Papovich et al. 2001;
+Finkelstein et al. 2015; Santini et al. 2015). We will add F200W-based morphological mea-
+surements for all NIRCam-resolved galaxies using standard parametric (i.e., n and R e using
+GALFIT) and non-parametric (i.e., CAS and Gini/M20 using customized scripts developed
+for CANDELS) measurements.</p>
                     </section>
                   </article>
                   <!--
@@ -160,7 +241,32 @@
         </div>
 
     <!-- Scripts -->
+      <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('modalImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      // Get the <span> element that closes the modal
+      //var span = document.getElementsByClassName("close")[0];
+      var span = document.getElementsByClassName("modal")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
